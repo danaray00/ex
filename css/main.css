@@ -1,0 +1,7 @@
+.home_avatar{
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #121212;
+}
