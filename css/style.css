@@ -1,0 +1,27 @@
+:root{
+    /*bright Color*/
+    --color-black:#121212;
+    --color-red:#e90000;
+    --color-yellow:#ffbb00;
+    --color-lightgray:#F0EFF4;
+    --color-gray:#8A8A8A;
+
+
+    /*Color*/
+    --color-primary:var(--color-lightgray);
+    --color-primary-variant:var(--color-gray);
+
+    --color-accent:var(--color-red);
+    --color-accent-variant:var(--color-yellow);
+    --color-text:var(--color-black);
+}
+
+
+ul{
+    list-style: none;
+}
+
+*{
+    box-sizing: border-box;
+}
+
