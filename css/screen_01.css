@@ -1,0 +1,7 @@
+.screen_01{
+    width: 100vw; /*1920px*/
+    height: 100vh;  
+    display: flex;
+    flex-flow: column wrap;
+    background-color: antiquewhite;
+}
