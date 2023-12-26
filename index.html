@@ -15,36 +15,37 @@
 
     <!--css, js파일연결 defer은 html문서를 먼저 읽도록 하는 명령어-->
         <link href="./css/style.css" type="text/css" rel="stylesheet">
-        <link href="./css/main.css" type="text/css" rel="stylesheet">
         <link href="./css/screen_01.css" type="text/css" rel="stylesheet">
         <link href="./css/screen_02.css" type="text/css" rel="stylesheet">
+        <link href="./css/screen_03.css" type="text/css" rel="stylesheet">
     <title>DaEun's Portfolio</title>
 
 </head>
 <body>
     <!--화면1-->
      <div class="screen_01">
-        <div class="box_01">
-            <span class="text_03">단단하다</span>
-            <span class="material-symbols-outlined" id="search_icon">
+        <div class="screen_container_01">
+            <span class="text_02">단단하다</span>
+            <span class="material-symbols-outlined" id="icon_size">
                 search 
             </span>
         </div>
-        <ul class="box_02">
-            <li>
-                <span class="text_bold">1</span> <span class="text_02">연하거나 무르지 않고 야무지고 튼튼하다.</span>
-                <br>
-                &nbsp;&nbsp;&nbsp;<span class="text_03">설명1</span>
+        <ul class="box_01">
+            <li class="box_01_01">
+                <span class="text_bold">1</span> 
+                &nbsp;&nbsp;&nbsp;
+                <span class="text_03">연하거나 무르지 않고 야무지고 튼튼하다.</span>
+
             </li>
-            <li>
-                <span class="text_bold">2</span> <span class="text_02">속이 차서 실속이 있다.</span>
-                <br>
-                &nbsp;&nbsp;&nbsp;<span class="text_03">설명2</span>
+            <li class="box_01_02">
+                <span class="text_bold">2</span>
+                &nbsp;&nbsp;&nbsp;
+                <span class="text_03">속이 차서 실속이 있다.</span>
             </li> 
-            <li>
-                <span class="text_bold">3</span> <span class="text_02">[</span> <span class="text_04">DAN</span><span class="text_02">:</span><span class="text_bold">DAN</span><span class="text_02">]</span>
-                <br>
-                &nbsp;&nbsp;&nbsp;<span class="text_03">설명3</span>
+            <li class="box_01_03">
+                <span class="text_bold">3</span>
+                &nbsp;&nbsp;&nbsp;
+                <span class="text_03">[</span> <span class="text_04">DAN</span><span class="text_04_02">:</span><span class="text_04_02">DAN</span><span class="text_03">]</span>
             </li>
         </ul>
         <div class="screen_scroll"></div >
@@ -62,49 +63,55 @@
         <div class="screen_scroll"></div>
      </div>
     <!--header-->
-    <header class="header">
-        <div class="mode_button">
-            &nbsp;
-        </div>
-        <nav class="header_nav">
+    <div class="screen_03">
+        <header class="header">
             <ul class="header_menu">
                 <li><a class="header_menu_item" href="#home">HOME</a></li>
                 <li><a class="header_menu_item" href="#about">ABOUT</a></li>
                 <li><a class="header_menu_item" href="#portfolio">PORTFOLIO</a></li>
+                <li><a class="header_menu_item" href="#etc">ETC</a></li>
                 <li><a  class="header_menu_item" href="#contact">CONTACT</a></li>
             </ul>
-        </nav>
-    </header>
-
+            <div class="dot"></div>
+            </nav>
+        </header>
     <!----------------------------------------------------------------------------------------->
     <!--main-->
-         <div class="main_left">
-            <img class="home_avatar" src="./image/person.jpg" alt="DaEun's images" width="250">
-            <ul>
-                <li><a> #키워드 </a></li>
-                <li><a> #키워드 </a></li>
-                <li><a> #키워드 </a></li>
-            </ul>
-        </div>
-        <div class="main_right">
-            <div class="main_right_01">
-                <h2> 안녕하세요</h2>
-                <h2> 단단하게 성장하는</h2>
-                <h2> UIUX 디자이너 정다은입니다</h2>
+    <div class="main">
+            <div class="main_left">
+                <img class="home_avatar" src="./image/person.jpg" alt="DaEun's images" width="345">
+                <ul class="keyword">
+                    <li><a class="text_03"> #키워드 </a></li>
+                    <li><a class="text_03"> #키워드 </a></li>
+                    <li><a class="text_03"> #키워드 </a></li>
+                </ul>
             </div>
-            <div class="main_right_02">
-                <a>2000.12.06</a>
-                <a>010-1234-1234</a>
-                <br>
-                <a>인천광역시 중구</a>
-                <a>Email@naver.com</a>
-                <br>
-                <a href="#">더 자세한 내용이 궁금하신가요?</a>
+            <div class="main_right">
+                <div class="main_right_01">
+                    <span class="text_05"> 안녕하세요</span>
+                    <br>
+                    <span class="text_05_accent"> 단단</span> <span class="text_05">하게 성장하는</span>
+                    <br>
+                    <span class="text_05"> UIUX 디자이너 </span>
+                    <span class="text_05_bold">정다은</span><span class="text_05">입니다</span>
+                </div>
+                <div class="main_right_02">
+                    <a>2000.12.06</a>
+                    <a>010-1234-1234</a>
+                    <br>
+                    <a>인천광역시 중구</a>
+                    <a>Email@naver.com</a>
+                    <br>
+                    <a href="#">더 자세한 내용이 궁금하신가요?</a>
+                </div>
+                <div class="main_right_03">
+                    <div class="skill_box"></div>
+                </div>
             </div>
-            <div class="main_right_03">
-              
+            <div class="main_bottom">
             </div>
-        </div>
+    </div>
+</div>
     <!--about--> 
 
     <!--portfolio_01-->
