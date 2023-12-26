@@ -6,7 +6,6 @@
     --color-lightgray:#F0EFF4;
     --color-gray:#8A8A8A;
 
-
     /*Color*/
     --color-primary:var(--color-lightgray);
     --color-primary-variant:var(--color-gray);
@@ -14,6 +13,8 @@
     --color-accent:var(--color-red);
     --color-accent-variant:var(--color-yellow);
     --color-text:var(--color-black);
+
+    /*scroll-snap-type: y mandatory;*/
 }
 
 
@@ -28,6 +29,7 @@ ul{
     font-family: 'Roboto', sans-serif;
 }
 
+/* text 모음=======================
 
 .text_00 {
     font-size: 60px;
@@ -42,3 +44,65 @@ ul{
     font-weight:bold;
     color: var(--color-accent);
 }
+
+.text_02{
+    font-size: 60px;
+    text-align: center;
+    font-weight:bold;
+    color: var(--color-text);
+    margin: 23% 67% 23% 4%;
+}
+
+.text_03{
+    font-size: 30px;
+    text-align: center;
+    color: var(--color-text);
+}
+
+
+.text_04{
+    font-size: 30px;
+    text-align: center;
+    font-weight:bold;
+    color: var(--color-accent);
+}
+
+.text_04_02{
+    font-size: 30px;
+    text-align: center;
+    font-weight:bold;
+    color: var(--color-text);
+}
+
+.text_bold{
+    font-size: 30px;
+    text-align: center;
+    color: var(--color-text);
+    font-weight: bold;
+}
+#icon_size{
+    font-size: 50px;
+    margin-right: 4%;
+}
+
+.text_05{
+    font-size: 50px;
+    text-align: left;
+    color: var(--color-text);
+}
+
+.text_05_bold{
+    font-size: 50px;
+    text-align: left;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+.text_05_accent{
+    font-size: 50px;
+    text-align: left;
+    font-weight:bold;
+    color: var(--color-accent);
+}
+
+*/
