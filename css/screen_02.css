@@ -18,19 +18,7 @@
     /* margin값은 나누기 2할것!!!!!!*/
 }
 
-.text_00 {
-    font-size: 60px;
-    text-align: center;
-    font-weight:bold;
-    color: var(--color-text);
-}
 
-.text_01{
-    font-size: 60px;
-    text-align: center;
-    font-weight:bold;
-    color: var(--color-accent);
-}
 
 .screen_scroll{
     width: 54px;
