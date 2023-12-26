@@ -1,0 +1,100 @@
+.screen_03{
+    width: 100vw; /*1920px*/
+    /*1080px* 또는 100vw*/  
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "main_bottom"
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: /*72px 943px 65px*/ 6.5% 87.5% 6%;
+    /*scroll-snap-align: end;*/
+    background-color: antiquewhite;
+}
+/*================================================header==========================*/
+
+.header{
+    grid-area: header;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: aqua;
+}
+/*================================================main==========================*/
+
+.main {
+    grid-area: main;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+    "main_left main_right"
+    ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+
+    .main_left{
+        grid-area: main_left;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+        .home_avatar{
+            width: 345px;
+            height: 526px;
+            object-fit: cover;
+            border-radius: 250px;
+            border: 3px solid #121212;
+        }
+        .keyword{
+            margin-top: 5%;
+        }
+
+        .main_right{
+            grid-area: main_right;
+            width: 100%; /*611px*/
+            height: 100%; /*619px*/
+            display: flex;
+            flex-flow: column nowrap;
+
+            background-color: aquamarine;
+        }
+            .main_right_01{
+                margin: 15% 12% 7% 6%; /*166 232 75 117 */
+                background-color: brown;
+            }
+            .main_right_02{
+
+                background-color: brown;
+            }
+            .main_right_03{ 
+
+                background-color: brown;
+            }
+
+                .text_05{
+                    font-size: 50px;
+                    text-align: left;
+                    color: var(--color-text);
+                }
+
+                .text_05_bold{
+                    font-size: 50px;
+                    text-align: left;
+                    font-weight: bold;
+                    color: var(--color-text);
+                }
+
+                .text_05_accent{
+                    font-size: 50px;
+                    text-align: left;
+                    font-weight:bold;
+                    color: var(--color-accent);
+                }
