@@ -1,0 +1,66 @@
+.screen_05{
+    width: 100vw; /*1920px*/
+    /*1080px* 또는 10 0vw*/  
+    height: 100vh;
+    background-color:cornsilk;
+    display: grid;
+    grid-template-areas:
+    "po_left po_right scroll_area";
+    grid-template-columns: 54% 29% 17%;
+    
+}
+
+.po_left{
+    grid-area: po_left;
+    background-color: var(--color-primary-variant);
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+}
+    .rect_po{
+        width: 779px;
+        height: 573px;
+        margin: 12% 6% 5%;/*33%*/ /*148 124 359 146*/
+        background-color: #ddd;
+    }
+        .text_po_01{
+            font-size: 30px;
+            color: var(--color-accent);
+            margin-right: 24%;
+            margin-left: 24%;
+            margin-bottom: 4%;
+        }
+
+        .text_po_02{
+            font-size: 20px;
+            color: var(--color-text);
+            margin-right: 24%;
+            margin-left: 24%;
+            margin-bottom: 10%;
+            text-align: center;
+        }
+
+    
+.po_right{
+    width: 100%;
+    height: 100%;
+    grid-area: po_right;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 7%;
+    padding-right: 7%;
+    text-align: center;
+}
+
+    .text_po_03{
+        font-size: 20px;
+        color: var(--color-text);
+        text-align: center;
+    }
+.scroll_area{
+    grid-area: scroll_area;
+    background-color: #fff;
+}
