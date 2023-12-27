@@ -9,10 +9,11 @@
     /*Color*/
     --color-primary:var(--color-lightgray);
     --color-primary-variant:var(--color-gray);
-
     --color-accent:var(--color-red);
     --color-accent-variant:var(--color-yellow);
     --color-text:var(--color-black);
+    
+    /*Size*/
 
     /*scroll-snap-type: y mandatory;*/
 }
