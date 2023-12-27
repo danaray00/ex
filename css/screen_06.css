@@ -1,0 +1,13 @@
+.screen_06{
+    width: 100vw; /*1920px*/
+    /*1080px* 또는 100vw*/  
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "etc_left scroll_area"
+    ;
+    grid-template-columns: 83% 17%;
+    background: repeating-linear-gradient(-45deg, #d7d7d7, #d7d7d7 5px, #fff 0,#fff 25px);
+}
+
+
