@@ -1,0 +1,6 @@
+.screen_07{
+    width: 100vw; /*1920px*/
+    /*1080px* 또는 100vw*/  
+    height: 50vh;
+    background-color:gainsboro;
+}
