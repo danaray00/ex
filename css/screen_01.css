@@ -3,7 +3,7 @@
     height: 100vh;  /*1080px*/
     display: flex;
     flex-flow: column wrap;
-    scroll-snap-align: end;
+    /*scroll-snap-align: end;*/
 } 
 
 .screen_container_01{
