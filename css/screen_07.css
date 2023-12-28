@@ -1,6 +1,14 @@
 .screen_07{
-    width: 100vw; /*1920px*/
+    width: 100%; /*1920px*/
     /*1080px* 또는 100vw*/  
-    height: 50vh;
+    height: 50vh;  
+    display: grid;
+    grid-template-areas:
+    "etc_left scroll_area"
+    ; 
+    grid-template-columns: 83% 17%;
     background-color:gainsboro;
+    scroll-snap-align: end;
+    scroll-behavior: smooth;
+
 }
