@@ -1,13 +1,94 @@
 .screen_06{
-    width: 100vw; /*1920px*/
-    /*1080px* 또는 100vw*/  
-    height: 100vh;
+    width: 100%; /*1920px*/
+    /*1080px* 또는 100vw*/   
+    height: 100vh;  
     display: grid;
     grid-template-areas:
     "etc_left scroll_area"
     ;
     grid-template-columns: 83% 17%;
-    background: repeating-linear-gradient(-45deg, #d7d7d7, #d7d7d7 5px, #fff 0,#fff 25px);
+    background: repeating-linear-gradient(-45deg, #F0EFF4, #F0EFF4 5px, #fff 0,#fff 25px);
+    scroll-snap-align: end;
+
+
 }
 
+.etc_left{
+    grid-area: etc_left;
+    display: flex;
+    flex-flow: wrap;
+}
 
+    .category{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .category_button{
+        position: relative;
+        background-color:var(--color-text);
+        color: #fff;
+        font-size: 30px;
+        /*padding: 0.5rem 3 c qh;*/
+        border-radius: 40px;
+        border-color: var(--color-text);;
+        cursor:pointer;
+        white-space: nowrap;
+    }
+
+        .category_selected{
+            background-color: var(--color-accent);
+            color: var(--color-primary);
+        }
+
+
+        /*===============img 6개===================*/
+        .etc_all{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .etc_work{
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;  
+        }
+
+        .etc_img{
+            width: 100%;
+        }
+
+        .etc_text{
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height: 100%;
+            background-color: var(--color-text);
+            opacity: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 300ms;
+            transform: translate(-10px);
+        }
+        .etc_text:hover{
+            opacity: 0.8;
+            transform: translateY(0px);
+        }
+
+        .etc_title::after{
+            content: "";
+            display: block;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0.5rem 0;
+            width: 50%;
+            height: 2px;
+            background-color: var(--color-accent);
+        }
