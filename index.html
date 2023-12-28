@@ -31,30 +31,32 @@
 <body>
     <!--화면1-->
      <div class="screen_01">
-        <div class="screen_container_01">
-            <span class="text_02">단단하다</span>
-            <span class="material-symbols-outlined" id="icon_size">
-                search 
-            </span>
-        </div>
-        <ul class="box_01">
-            <li class="box_01_01">
-                <span class="text_bold">1</span> 
-                &nbsp;&nbsp;&nbsp;
-                <span class="text_03">연하거나 무르지 않고 야무지고 튼튼하다.</span>
+        <div>
+            <div class="screen_container_01">
+                <span class="text_02">단단하다</span>
+                <span class="material-symbols-outlined" id="icon_size">
+                    search 
+                </span>
+            </div>
+            <ul class="box_01">
+                <li class="box_01_01">
+                    <span class="text_bold">1</span> 
+                    &nbsp;&nbsp;&nbsp;
+                    <span class="text_03">연하거나 무르지 않고 야무지고 튼튼하다.</span>
 
-            </li>
-            <li class="box_01_02">
-                <span class="text_bold">2</span>
-                &nbsp;&nbsp;&nbsp;
-                <span class="text_03">속이 차서 실속이 있다.</span>
-            </li> 
-            <li class="box_01_03">
-                <span class="text_bold">3</span>
-                &nbsp;&nbsp;&nbsp;
-                <span class="text_03">[</span> <span class="text_04">DAN</span><span class="text_04_02">:</span><span class="text_04_02">DAN</span><span class="text_03">]</span>
-            </li>
-        </ul>
+                </li>
+                <li class="box_01_02">
+                    <span class="text_bold">2</span>
+                    &nbsp;&nbsp;&nbsp;
+                    <span class="text_03">속이 차서 실속이 있다.</span>
+                </li> 
+                <li class="box_01_03">
+                    <span class="text_bold">3</span>
+                    &nbsp;&nbsp;&nbsp;
+                    <span class="text_03">[</span> <span class="text_04">DAN</span><span class="text_04_02">:</span><span class="text_04_02">DAN</span><span class="text_03">]</span>
+                </li>
+            </ul>
+        </div>
      </div>
     <!----------------------------------------------------------------------------------------->
     <!--화면2-->
@@ -69,16 +71,21 @@
      </div>
     <!--header-->
     <div class="screen_03">
-        <header class="header">
-            <ul class="header_menu">
-                <li><a class="header_menu_item" href="#home">HOME</a></li>
-                <li><a class="header_menu_item" href="#about">ABOUT</a></li>
-                <li><a class="header_menu_item" href="#portfolio">PORTFOLIO</a></li>
-                <li><a class="header_menu_item" href="#etc">ETC</a></li>
-                <li><a  class="header_menu_item" href="#contact">CONTACT</a></li>
-            </ul>
-            <div class="dot"></div>
-            </nav>
+        <header class="header_container">
+                <div class="header">
+                    <ul class="header_menu">
+                        <li><a class="header_menu_item active" href="#home">HOME</a></li>
+                        <li><a class="header_menu_item" href="#about">ABOUT</a></li>
+                        <li><a class="header_menu_item" href="#portfolio">PORTFOLIO</a></li>
+                        <li><a class="header_menu_item" href="#etc">ETC</a></li>
+                        <li><a  class="header_menu_item" href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="hamburger">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </div>
         </header>
     <!----------------------------------------------------------------------------------------->
     <!--main-->
@@ -101,26 +108,40 @@
                     <span class="text_05_bold">정다은</span><span class="text_05">입니다</span>
                 </div>
                 <div class="main_right_02">
-                    <a>2000.12.06</a>
-                    <a>010-1234-1234</a>
-                    <br>
-                    <a>인천광역시 중구</a>
-                    <a>Email@naver.com</a>
-                    <br>
-                    <a href="#">더 자세한 내용이 궁금하신가요?</a>
+                        <div class="list_01">
+                            <span class ="text_06">2000.12.06</span>
+                            &nbsp;&nbsp;&nbsp;
+                            <span class ="text_06">인천광역시 중구</span>
+                        </div>    
+                        <div class="list_02">
+                            <span class ="text_06">010-2768-3661</span>
+                            &nbsp;&nbsp;&nbsp;  
+                            <span class ="text_06">danaray@naver.com</span>
+                        </div>
+                        <div class="list_03">
+                            <a href="#">
+                                <span class="text_06_line">
+                                    더 자세한 내용이 궁금하신가요?
+                                </span>
+                            </a>
+                        </div>
                 </div>
                 <div class="main_right_03">
-                    <div class="skill_box"></div>
+                    <img src="./image/skill.jpg" alt="포토샵" class="skill_box">
+                    <img src="./image/skill.jpg" alt="일러스트" class="skill_box">
+                    <img src="./image/skill.jpg" alt="피그마" class="skill_box">
+                    <img src="./image/skill.jpg" alt="HTML" class="skill_box">
+                    <img src="./image/skill.jpg" alt="CSS" class="skill_box">
+                    <img src="./image/skill.jpg" alt="JavaScript" class="skill_box">
+                    <img src="./image/skill.jpg" alt="rect" class="skill_box">
                 </div>
             </div>
-            <div class="main_bottom">
-            </div>
     </div>
-</div>
+    <div class="main_bottom"></div>
     <!--about--> 
 <div class="screen_04">
     <div class="about_left">
-        <div class="text_06">
+        <div>   
             EXPERIENCE
         </div>
         <ul class="text_experience">
@@ -133,7 +154,7 @@
                 <br> <span>수업명</span>
             </li>
         </ul>
-        <div class="text_06">
+        <div>
             CERTIFICATE
         </div>
         <ul class="text_certificate">
@@ -144,7 +165,7 @@
             <li>2023.12 GTQ 포토샵 1급 </li>
         </ul>
     </div>
-    <div class="about_right">
+    <div class="scroll_area">
         <div class="search_box">
             <div>rect</div>
             <div> ABOUT </div>
@@ -175,6 +196,8 @@
             <br>
             사용툴 및 주요 언어
         </span>
+        <div class="button_left"> </div>
+        <div class="button_right"> </div>
     </div>
     <div class="po_right">
         <span class="text_po_03">
@@ -188,11 +211,96 @@
 </div>
     <!--ETC-->
 <div class="screen_06">
-    <div class="etc_left"> </div>
+    <div class="etc_left">
+        <!--카테고리-->
+        <ul class="category">
+            <li><button class="category_button category_selected">
+                All
+            </button></li>
+            <li><button class="category_button">
+                Front-End
+            </button></li>
+            <li><button class="category_button">
+                Design
+            </button></li>
+        </ul>
+        <!--사진1-->
+        <ul class="etc_all">
+            <li class="etc_work">
+                <a href="#" target="_blank">
+                    <img src="./image/etc_img.jpg" alt="작업이미지" class="etc_img">
+                    <div class="etc_text">
+                        <span class="etc_title"> 제목</span>
+                        <span class="etc_description"> 설명</span>
+                    </div>
+                </a>
+            </li>
+            <li class="etc_work">
+                <a href="#" target="_blank">
+                    <img src="./image/etc_img.jpg" alt="작업이미지" class="etc_img">
+                    <div class="etc_text">
+                        <span class="etc_title"> 제목2</span>
+                        <span class="etc_description"> 설명2</span>
+                    </div>
+                </a>
+            </li>
+            <li class="etc_work">
+                <a href="#" target="_blank">
+                    <img src="./image/etc_img.jpg" alt="작업이미지" class="etc_img">
+                    <div class="etc_text">
+                        <span class="etc_title"> 제목3</span>
+                        <span class="etc_description"> 설명3</span>
+                    </div>
+                </a>
+            </li>
+            <li class="etc_work">
+                <a href="#" target="_blank">
+                    <img src="./image/etc_img.jpg" alt="작업이미지" class="etc_img">
+                    <div class="etc_text">
+                        <span class="etc_title"> 제목4</span>
+                        <span class="etc_description"> 설명4</span>
+                    </div>
+                </a>
+            </li>
+            <li class="etc_work">
+                <a href="#" target="_blank">
+                    <img src="./image/etc_img.jpg" alt="작업이미지" class="etc_img">
+                    <div class="etc_text">
+                        <span class="etc_title"> 제목5</span>
+                        <span class="etc_description"> 설명5</span>
+                    </div>
+                </a>
+            </li>
+            <li class="etc_work">
+                <a href="#" target="_blank">
+                    <img src="./image/etc_img.jpg" alt="작업이미지" class="etc_img">
+                    <div class="etc_text">
+                        <span class="etc_title"> 제목6</span>
+                        <span class="etc_description"> 설명6</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
     <div class="scroll_area"></div>
 </div>
     <!--contact-->
-<div class="screen_07"></div>
+<div class="screen_07">
+    <div class="contact_left">
+        <span> 정다은 </span>
+        <span> 
+            Ut enim ad minim veniam, quis nostrud exercitation
+            <br>
+            ullamco laboris nisi ut aliquip ex ea commodo con
+        </span>
+        <span>
+            danaray@naver.com
+            <br>
+            010-2768-3661
+        </span>
+    </div>
+    <div class="scroll_area"></div>
+</div>
 
 </body> 
 </html>
