@@ -1,6 +1,26 @@
 .screen_04{
-    width: 100vw; /*1920px*/
+    width: 100%; /*1920px*/
     /*1080px* 또는 100vw*/  
-    height: 100vh;
-    background-color:cornflowerblue;
+    height: 100vh;  
+    scroll-snap-align: end;
+    display: grid;
+    grid-template-areas:
+    "about_left scroll_area"
+    ;
+    grid-template-columns: 83% 17%;
+
+}
+
+.about_left{
+    width: 100%;
+    height: 100%;
+    background-color:var(--color-primary);
+
+} 
+
+.scroll_area{
+    width: 100%;
+    height: 100%;
+    grid-area: scroll_area;
+    background-color: #fff;
 }
