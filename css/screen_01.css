@@ -1,9 +1,10 @@
 .screen_01{
-    width: 100vw; /*1920px*/
+    width: 100%; /*1920px*/
     height: 100vh;  /*1080px*/
     display: flex;
     flex-flow: column wrap;
-    /*scroll-snap-align: end;*/
+    scroll-snap-align: end;
+
 } 
 
 .screen_container_01{
