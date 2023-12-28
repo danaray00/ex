@@ -1,18 +1,20 @@
 .screen_05{
-    width: 100vw; /*1920px*/
+    width: 100%; /*1920px*/
     /*1080px* 또는 10 0vw*/  
     height: 100vh;
-    background-color:cornsilk;
     display: grid;
     grid-template-areas:
     "po_left po_right scroll_area";
     grid-template-columns: 54% 29% 17%;
+    scroll-snap-align: end;
     
 }
 
 .po_left{
+    width: 100%;
+    height: 100%;
     grid-area: po_left;
-    background-color: var(--color-primary-variant);
+    background-color:#fff;
     display: flex;
     flex-flow: wrap;
     justify-content: center;
@@ -22,9 +24,9 @@
         width: 779px;
         height: 573px;
         margin: 12% 6% 5%;/*33%*/ /*148 124 359 146*/
-        background-color: #ddd;
+        background-color: #4a4a4a;
     }
-        .text_po_01{
+        .text_po_01{ 
             font-size: 30px;
             color: var(--color-accent);
             margin-right: 24%;
@@ -46,7 +48,7 @@
     width: 100%;
     height: 100%;
     grid-area: po_right;
-    background-color: #fff;
+    background-color: var(--color-primary);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,4 +65,14 @@
 .scroll_area{
     grid-area: scroll_area;
     background-color: #fff;
+}
+
+.button_left{
+    position: absolute;
+    width: 104px;
+    height: 104px;
+
+    border-radius: 100%;
+    background-color:blanchedalmond;
+    font-size: 100px;
 }
