@@ -2,25 +2,157 @@
     width: 100%; /*1920px*/
     /*1080px* 또는 100vw*/  
     height: 100vh;  
-    scroll-snap-align: end;
+    scroll-snap-align: start;
     display: grid;
     grid-template-areas:
-    "about_left scroll_area"
+    "about_left about_rignt scroll_area"
     ;
-    grid-template-columns: 83% 17%;
+    grid-template-columns: 54% 29% 17%;
 
 }
 
 .about_left{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color:var(--color-primary);
+    display: grid;
+    grid-template-areas:
+    "first second";
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    padding: 180px 147px;
 
+} 
+    .first{
+        grid-area: first;
+        width: 260px;
+        height: 100%;/*60px;*/
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+        .first_box{
+            margin-top: 100px;
+            margin-bottom: 220px;
+            width: 200px;
+            height: 40px;
+            background-color: var(--color-accent);
+            border-radius: 50px;
+            text-align: center;
+            line-height: 40px;
+            }
+            
+        .first_box_02{
+
+            width: 200px;
+            height: 40px;
+            background-color: var(--color-accent);
+            border-radius: 50px;
+            text-align: center;
+            line-height: 40px;
+            }
+
+    .second{
+        grid-area: second;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+        .experience{
+            margin-top: 80px;
+        }
+
+
+.about_right{
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(-45deg, #F0EFF4, #F0EFF4 5px, #fff 0,#fff 25px);
 } 
 
 .scroll_area{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     grid-area: scroll_area;
     background-color: #fff;
+    display: grid;
+    grid-template-areas:
+    "search_box"
+    "header_scroll"
+    "toggle"
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: /*72px 943px 65px*/ 5% 90% 5%;
+}
+
+    .search_box{
+        grid-area: search_box;
+    }
+
+        .rect_search{
+            width: 70%;
+            height: 90%;
+            background-color: var(--color-primary);
+            border-radius: 50px;
+            margin: 5%;
+            padding: 3px;
+            margin-left: 25%;
+        }
+
+            .scroll_text{
+                font-size: 30px;
+                margin-left: 8%;
+                margin-right: 23%;
+                text-align: center;
+            }
+
+            .material-symbols-outlined{
+                font-size: 25px;
+                margin-right: 8%;
+                text-align: center;
+            }
+    .header_scroll{
+        grid-area: header_scroll;
+        text-align: right;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+        .scroll_text_02{
+            font-size: 20px;
+            display: block;
+            padding: 8px 16px;
+            margin-right: 5px;
+            color: var(--color-text);
+            cursor:pointer;
+
+        }
+
+        .scroll_text_02:hover{
+            color: var(--color-primary-variant);
+            cursor:pointer;
+        }
+
+    .toggle{
+        grid-area: toggle;
+        background-color: darkgreen;
+    }
+
+.text_07_round{
+    font-size: 25px;
+    color: #fff;
+}
+
+.text_07{
+    font-size:18px;
+    color: var(--color-text);
+    margin: 20px;
+}
+
+.text_07_small{
+    font-size:13px;
+    line-height: 30px;
+    color: var(--color-text);
+    margin-left: 150px;
 }
