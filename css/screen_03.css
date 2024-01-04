@@ -9,30 +9,31 @@
     "main_bottom"
     ;
     grid-template-columns: 100%;
-    grid-template-rows: /*72px 943px 65px*/ 5% 90% 5%;
+    grid-template-rows: /*72px 943px 65px*/ 5vh 90vh 5vh;
     scroll-snap-align: start;
+    background-color: var(--color-origin);
 }
 /*================================================header==========================*/
 
 .header{
     grid-area: header;
     width: 100%;
-    height: 100%;
     display: flex;
-    padding-top: 1px;
+    flex-flow: column nowrap;
+    align-items: center; 
     justify-content: space-between;
 }
     .header_menu{
         display: flex;
-        gap:4px;
-        margin-left: 72%;
+        gap: 1rem;
+        margin-left: 135rem;
     }
 
     .header_menu_item{
         color: var(--color-text);
         display: block;
-        padding: 8px 16px;
-        font-size: 20px;
+        padding: 1rem 2rem;
+        font-size: 2rem;
     }
 
     .header_menu_item:hover{
@@ -47,98 +48,90 @@
 
 .main {
     grid-area: main;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-areas:
-    "main_left main_right"
-    ;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20rem;
+    padding-right: 20rem;
+
 }
 
-
     .main_left{
-        grid-area: main_left;
-        width: 100%;
-        height: 100%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
+        margin-right: 10rem;
     }
         .home_avatar{
-            width: 345px;
-            height: 526px;
+            width: 40rem;/*345px;*/
+            height: 55rem;/*526px;*/
             object-fit: cover;
-            border-radius: 250px;
-            border: 3px solid var(--color-text);
+            border-radius: 300px;
+            border: 2px solid var(--color-text);
         }
         .keyword{
-            margin-top: 5%;
+            margin-top: 5rem;
         }
 
         .main_right{
-            grid-area: main_right;
-            width: 100%; /*611px*/
-            height: 100%; /*619px*/
             display: flex;
             flex-flow: column wrap;
-            gap: 65px;
+            gap: 8rem;
+            margin-left: 10rem;
+
         }
             .main_right_01{
-                margin-top: 18%;
+                margin-top: 2rem;
             }
             .main_right_02{
                 display: flex;
                 flex-flow: column nowrap;
-                gap: 15px;
-                width: 100%;
+                gap: 2rem;
             }
             .main_right_03{ 
                 display: flex;
                 flex-flow: wrap;
-                gap: 10px;
+                gap: 1rem;
             }
 
             .skill_box{
+                width: 8rem;
                 border-radius: 10px;
                 overflow: hidden;
             }
 .main_bottom {
     grid-area: main_bottom;
-    width: 100%;
-    height: 100%;
 }
+            .text_05{
+                font-size: 5.5rem;
+                text-align: left;
+                color: var(--color-text);
+            }
 
-                .text_05{
-                    font-size: 50px;
-                    text-align: left;
-                    color: var(--color-text);
-                }
+            .text_05_bold{
+               font-size: 5.5rem;
+                text-align: left;
+                font-weight: bold;
+                color: var(--color-text);
+            }
 
-                .text_05_bold{
-                    font-size: 50px;
-                    text-align: left;
-                    font-weight: bold;
-                    color: var(--color-text);
-                }
+            .text_05_accent{
+                font-size: 5.5rem;
+                text-align: left;
+                font-weight:bold;
+                color: var(--color-accent);
+            }
 
-                .text_05_accent{
-                    font-size: 50px;
-                    text-align: left;
-                    font-weight:bold;
-                    color: var(--color-accent);
-                }
+            .text_06{
+                font-size: 2.5rem;
+                text-align: left;
+                color: var(--color-text);
+            }
 
-                .text_06{
-                    font-size: 20px;
-                    text-align: left;
-                    color: var(--color-text);
-                }
-
-                .text_06_line{
-                    font-size: 12px;
-                    text-align: left;
-                    color: var(--color-text);
-                    text-decoration: underline;
-                }
+            .text_06_line{
+                font-size: 2rem;
+                text-align: left;
+                color: var(--color-text);
+                text-decoration: underline;
+            }
