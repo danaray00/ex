@@ -1,0 +1,125 @@
+.sticky{
+    position: absolute;
+    left: 83%;
+    top: 300vh;
+    width: 17%;
+    height: 400vh;
+    z-index: 10;
+    background-color:var(--color-origin);
+}
+    .scroll_area{
+        /*sticky 활용하기*/
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        
+        grid-area: scroll_area;
+        /*background-color: #fff;*/
+        display: grid;
+        grid-template-areas:
+        "search_box"
+        "header_scroll"
+        "toggle"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: /*72px 943px 65px*/ 5% 90% 5%;
+
+    }
+
+        .search_box{
+            grid-area: search_box;
+        }
+
+            .rect_search{
+                position: relative;
+                width: 28rem;
+                height: 6rem;
+                background-color: var(--color-primary);
+                border-radius: 100px;
+                margin: 1rem;
+                margin-left: 4.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .material-symbols-outlined{
+                    font-size: 3rem;
+                    margin-left: 20rem;
+                    text-align: center;
+                    color:var(--color-text);
+
+                }
+        .header_scroll{
+            grid-area: header_scroll;
+            text-align: right;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+        }
+            .scroll_text_02{
+                font-size: 2rem;
+                display: block;
+                padding: 1.5rem;
+                margin-right: 1rem;
+                color: var(--color-text);
+                cursor:pointer;
+            }
+
+            .scroll_text_02:hover{
+                color: var(--color-primary-variant);
+            }
+
+    
+    /*    .toggle{
+           grid-area: toggle; 
+        }
+        
+                #toggle_icon{
+                    color: var(--color-text);
+                    font-size: 3rem;
+                    border-radius: 200px;
+                    display: flex;
+                    cursor: pointer;
+                    width: 5rem;
+                    height: 5rem;
+                    padding: 1rem;
+                    z-index: 5;
+                    margin-left: 26rem;
+                    margin-right: 1rem;
+                    background-color: var(--color-primary);
+
+                }*/
+
+        .toggle{
+            grid-area: toggle;
+        }
+            .toggle_main{
+                width: 10rem;
+                height: 4rem;
+                border-radius: 500px;
+                background-color: var(--color-primary);
+                margin-left: 21rem;
+                margin-right: 1rem;
+                z-index: 1;
+                display: flex;
+                align-items: center;
+            }
+                .toggle_button{
+                    width: 3rem;
+                    height: 3rem;
+                    border-radius: 500px;
+                    z-index: 2;
+                    background-color: var(--color-text);
+                    margin-left: 0.5rem;
+                    transition: all 1s;
+                    cursor:pointer;
+
+                }
+                .toggle_button.open{
+                    margin-left: 6.5rem;
+                }
+
+
