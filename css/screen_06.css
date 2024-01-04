@@ -4,100 +4,131 @@
     height: 100vh;  
     display: grid;
     grid-template-areas:
-    "etc_left scroll_area"
+    "etc_left scroll_area_position_etc"
     ;
     grid-template-columns: 83% 17%;
-    background: repeating-linear-gradient(-45deg, #F0EFF4, #F0EFF4 5px, #fff 0,#fff 25px);
     scroll-snap-align: start;
+    background-color: var(--color-origin);
+    /*background: repeating-linear-gradient(-45deg, #F0EFF4, #F0EFF4 5px, #fff 0,#fff 1.5rem);*/
+
+
 }
 
 .etc_left{
     grid-area: etc_left;
     display: flex;  
-    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    background: repeating-linear-gradient(-45deg, var(--color-primary),var(--color-primary) 5px, #ffffff00 0, #ffffff00 1.5rem);
+
 }
 
-    .category{
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        margin-bottom: 10%;
-    }
-
-    .category_button{
-        position: relative;
-        background-color:var(--color-text);
-        color: var(--color-primary);
-        font-size: 30px;
-        /*padding: 0.5rem 3 cqh;*/
-        padding-left: 10px;
-        padding-right: 10px;
-        border-radius: 40px;
-        cursor:pointer;
-        white-space: nowrap;
-    }
-
-        .category_selected{
-            background-color: var(--color-accent);
-            color: var(--color-primary);
-            border-color: var(--color-accent);
-        }
-
-
-        /*===============img 6개===================*/
-        .etc_all{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            gap: 1rem;
-        }
-
-        .etc_work{
-            position: relative;
-            overflow: hidden;
-        }
-
-        .etc_img{
-            width: 100%;
-        }
-
-        .etc_text{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width:300px;
-            height: 300px;
-            background-color: var(--color-text);
-            opacity: 0;
-            display: flex;
-            flex-direction: column;
+        .etc_left_container{
+            display: flex;  
+            flex-flow: column wrap;
             justify-content: center;
             align-items: center;
-            transition: all 300ms;
-            transform: translate(-10px);
-            color: #fff;
-        }
-        .etc_text:hover{
-            opacity: 0.8;
-            transform: translateY(0px);
-        }
+            gap: 8rem;
 
-        .etc_title::after{
-            content: "";
-            display: block;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-            margin: 0.5rem 0;
-            width: 50%;
-            height: 2px;
-            background-color: var(--color-accent);
         }
+            .category{
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+            }
 
-        .scroll_area{
-            grid-area: scroll_area;
-            background-color: #fff;
-            height: 100vh;
+            .category_button{
+                position: relative;
+                background-color: var(--color-text);
+                color: var(--color-origin);
+                font-size: 3rem;
+                padding: 0.5rem 1.5rem;
+                border-radius: 500px;
+                cursor: pointer;
+                white-space: nowrap;
+            }
+
+                .category_selected{
+                    background-color: var(--color-accent);
+                    color: #fff;
+                    border-color: var(--color-accent);
+                }
+
+
+                /*===============img 6개===================*/
+                .etc_all{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    gap: 2rem;
+                }
+
+                .etc_work{
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                .etc_img{
+                    width: 100%;
+                }
+
+                .etc_text{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width:100%;
+                    height: 100%;
+                    background-color: #121212;
+                    opacity: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all 300ms;
+                    transform: translate(-10px);
+                    color: #fff;
+                }
+                .etc_text:hover{
+                    opacity: 0.8;
+                    transform: translateY(0px);
+                }
+
+                .etc_title::after{
+                    content: "";
+                    display: block;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    margin: 0.5rem 0;
+                    width: 50%;
+                    height: 2px;
+                    background-color: var(--color-accent);
+                }
+            .etc_title{
+                font-size: 1.5rem;
+            }
+            .etc_description{
+                font-size: 1.5rem;
+            }
+
+.scroll_area_position_etc{
+    grid-area: scroll_area_position_etc;
+    background-color: var(--color-origin);
+}
+    .search_box_position_etc{
+        width: 28rem;
+        height: 6rem;
+        margin: 1rem;
+        margin-left: 4.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .scroll_text_etc{
+            font-size: 3rem;
+            margin-left: 1rem;
+            margin-right: 18rem;
+            text-align: center;
+            z-index: 902;
+            color: var(--color-text);
         }
