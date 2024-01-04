@@ -5,154 +5,94 @@
     scroll-snap-align: start;
     display: grid;
     grid-template-areas:
-    "about_left about_rignt scroll_area"
+    "about_left about_right scroll_area_position"
     ;
     grid-template-columns: 54% 29% 17%;
-
+    background-color: var(--color-origin);
 }
 
 .about_left{
-    width: 100%;
-    height: 100vh;
+    grid-area: about_left;
     background-color:var(--color-primary);
-    display: grid;
-    grid-template-areas:
-    "first second";
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 100%;
-    padding: 180px 147px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 
 } 
     .first{
-        grid-area: first;
-        width: 260px;
-        height: 100%;/*60px;*/
         display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
+        flex-flow: nowrap;
+        justify-content: center;
+        gap: 10rem;
+        margin-bottom: 10rem;
     }
         .first_box{
-            margin-top: 100px;
-            margin-bottom: 220px;
-            width: 200px;
-            height: 40px;
+            width: 20rem;
+            height: 4rem;
             background-color: var(--color-accent);
             border-radius: 50px;
             text-align: center;
-            line-height: 40px;
             }
-            
-        .first_box_02{
-
-            width: 200px;
-            height: 40px;
-            background-color: var(--color-accent);
-            border-radius: 50px;
-            text-align: center;
-            line-height: 40px;
-            }
-
+           
     .second{
-        grid-area: second;
-        width: 100%;
-        height: 100%;
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: nowrap;
+        gap: 10rem;
     }
-
-        .experience{
-            margin-top: 80px;
-        }
 
 
 .about_right{
-    width: 100%;
-    height: 100%;
-    background: repeating-linear-gradient(-45deg, #F0EFF4, #F0EFF4 5px, #fff 0,#fff 25px);
+    grid-area: about_right;
+
 } 
+    .right_box{
+        width: 100%;
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, var(--color-primary),var(--color-primary) 5px, #ffffff00 0, #ffffff00 1.5rem);
+        z-index: 300;
+    }
 
-.scroll_area{
-    width: 100%;
-    height: 100vh;
-    grid-area: scroll_area;
-    background-color: #fff;
-    display: grid;
-    grid-template-areas:
-    "search_box"
-    "header_scroll"
-    "toggle"
-    ;
-    grid-template-columns: 100%;
-    grid-template-rows: /*72px 943px 65px*/ 5% 90% 5%;
+.scroll_area_position{
+    grid-area: scroll_area_position;
+    width: 100%; 
 }
-
-    .search_box{
-        grid-area: search_box;
-    }
-
-        .rect_search{
-            width: 70%;
-            height: 90%;
-            background-color: var(--color-primary);
-            border-radius: 50px;
-            margin: 5%;
-            padding: 3px;
-            margin-left: 25%;
-        }
-
-            .scroll_text{
-                font-size: 30px;
-                margin-left: 8%;
-                margin-right: 23%;
-                text-align: center;
-            }
-
-            .material-symbols-outlined{
-                font-size: 25px;
-                margin-right: 8%;
-                text-align: center;
-            }
-    .header_scroll{
-        grid-area: header_scroll;
-        text-align: right;
+    .search_box_position{
+        width: 28rem;
+        height: 6rem;
+        margin: 1rem;
+        margin-left: 4.5rem;
         display: flex;
-        flex-flow: column wrap;
         justify-content: center;
+        align-items: center;
     }
-        .scroll_text_02{
-            font-size: 20px;
-            display: block;
-            padding: 8px 16px;
-            margin-right: 5px;
-            color: var(--color-text);
-            cursor:pointer;
+
+
+    .scroll_text{
+        font-size: 3rem;
+        margin-left: 1rem;
+        margin-right: 14rem;
+        text-align: center;
+        z-index: 900;
+        color: var(--color-text);
 
         }
 
-        .scroll_text_02:hover{
-            color: var(--color-primary-variant);
-            cursor:pointer;
-        }
-
-    .toggle{
-        grid-area: toggle;
-        background-color: darkgreen;
-    }
 
 .text_07_round{
-    font-size: 25px;
+    font-size: 2.5rem;
     color: #fff;
 }
 
 .text_07{
-    font-size:18px;
+    font-size: 2.5rem;
     color: var(--color-text);
-    margin: 20px;
+    margin-bottom: 1rem;
 }
 
 .text_07_small{
-    font-size:13px;
-    line-height: 30px;
+    font-size: 1.5rem;
     color: var(--color-text);
-    margin-left: 150px;
+    margin-left: 11rem;
 }
+
