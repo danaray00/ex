@@ -10,7 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
      <!--아이콘 적용-->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
     <!--css, js파일연결 defer은 html문서를 먼저 읽도록 하는 명령어-->
@@ -19,9 +24,15 @@
         <link href="./css/screen_02.css" type="text/css" rel="stylesheet">
         <link href="./css/screen_03.css" type="text/css" rel="stylesheet">
         <link href="./css/screen_04.css" type="text/css" rel="stylesheet">
+        <link href="./css/sticky.css" type="text/css" rel="stylesheet">
         <link href="./css/screen_05.css" type="text/css" rel="stylesheet">
         <link href="./css/screen_06.css" type="text/css" rel="stylesheet">
         <link href="./css/screen_07.css" type="text/css" rel="stylesheet">
+        <link href="./css/media_768.css" type="text/css" rel="stylesheet">
+
+        <script type="module" src="./js/scroll_button.js" defer></script>
+        <script type="module" src="./js/darkmode.js" defer></script>
+        <script type="module" src="./js/etc_category.js" defer></script>
 
 
 
@@ -31,7 +42,7 @@
 <body>
     <!--화면1-->
      <div class="screen_01">
-        <div>
+        <div class="screen_container">
             <div class="screen_container_01">
                 <span class="text_02">단단하다</span>
                 <span class="material-symbols-outlined" id="icon_size">
@@ -41,19 +52,15 @@
             <ul class="box_01">
                 <li class="box_01_01">
                     <span class="text_bold">1</span> 
-                    &nbsp;&nbsp;&nbsp;
                     <span class="text_03">연하거나 무르지 않고 야무지고 튼튼하다.</span>
-
                 </li>
                 <li class="box_01_02">
                     <span class="text_bold">2</span>
-                    &nbsp;&nbsp;&nbsp;
                     <span class="text_03">속이 차서 실속이 있다.</span>
                 </li> 
                 <li class="box_01_03">
                     <span class="text_bold">3</span>
-                    &nbsp;&nbsp;&nbsp;
-                    <span class="text_03">[</span> <span class="text_04">DAN</span><span class="text_04_02">:</span><span class="text_04_02">DAN</span><span class="text_03">]</span>
+                    <span class="text_03">[<span class="text_04">DAN</span><span class="text_04_02">:</span><span class="text_04_02">DAN</span>]</span>
                 </li>
             </ul>
         </div>
@@ -70,7 +77,7 @@
         </div>
      </div>
     <!--header-->
-    <div class="screen_03">
+    <section id="home" class="screen_03">
         <header class="header_container">
                 <div class="header">
                     <ul class="header_menu">
@@ -87,25 +94,25 @@
                     </span>
                 </div>
         </header>
-    <!----------------------------------------------------------------------------------------->
     <!--main-->
     <div class="main">
             <div class="main_left">
-                <img class="home_avatar" src="./image/person.jpg" alt="DaEun's images" width="345">
+                <!--<img class="home_avatar" src="./image/person.jpg" alt="DaEun's images" width="345">-->
+                <div class="home_avatar"></div>
                 <ul class="keyword">
-                    <li><a class="text_03"> #키워드 </a></li>
-                    <li><a class="text_03"> #키워드 </a></li>
-                    <li><a class="text_03"> #키워드 </a></li>
+                    <li><a class="text_06"> # 키워드 </a></li>
+                    <li><a class="text_06"> # 키워드 </a></li>
+                    <li><a class="text_06"> # 키워드 </a></li>
                 </ul>
             </div>
             <div class="main_right">
                 <div class="main_right_01">
-                    <span class="text_05"> 안녕하세요</span>
-                    <br>
-                    <span class="text_05_accent"> 단단</span> <span class="text_05">하게 성장하는</span>
-                    <br>
-                    <span class="text_05"> UIUX 디자이너 </span>
-                    <span class="text_05_bold">정다은</span><span class="text_05">입니다</span>
+                        <span class="text_05"> 안녕하세요</span>
+                        <br>
+                        <span class="text_05_accent"> 단단</span> <span class="text_05">하게 성장하는</span>
+                        <br>
+                        <span class="text_05"> UIUX 디자이너 </span>
+                        <span class="text_05_bold">정다은</span><span class="text_05">입니다</span>
                 </div>
                 <div class="main_right_02">
                         <div class="list_01">
@@ -137,77 +144,107 @@
                 </div>
             </div>
     </div>
-    <div class="main_bottom"></div>
+    <div class="main_bottom">
+
+    </div>
+</section>
     <!--about--> 
-<div class="screen_04">
+<section id="about" class="screen_04">
     <div class="about_left">
-        <div class="first">
-            <div class="first_box">   
-                <span class= "text_07_round">
-                    EXPERIENCE
-                </span>
-            </div>
-            <div class="first_box_02">   
-                <span class= "text_07_round">
-                    CERTIFICATE
-                </span>
+        <div class="about_container">
+            <div class="first">
+                <div class="first_box">   
+                    <span class= "text_07_round">
+                        EXPERIENCE
+                    </span>
+                </div>
+                <ul class="experience">
+                    <li class="text_07">2019.02 인천하늘고등학교 (졸업)</li>
+                    <li class="text_07">2019.03 - 2023.08 한성대학교 (졸업)
+                        <br><span class="text_07_small">문학문화콘텐츠/한국어교육 4.07/4.5</span>
+                    </li>
+                    <li class="text_07">2022.05 - 2022.11 청춘마이크 홍보 서포터즈</li>
+                    <li class="text_07">2023.09 - 2024.03 그린컴퓨터학원신촌 수료
+                        <br><span class="text_07_small">웹퍼블리셔 & 프론트엔드 (React) IT개발자 B</span>
+                    </li>
+                </ul>
             </div>
 
-        </div>
-        <div class="second">
-            <ul class="experience">
-                <li class="text_07">2016.03 - 2019.02 인천하늘고등학교 졸업</li>
-                <li class="text_07">2019.03 - 2023.08 한성대학교 졸업
-                    <br><span class="text_07_small">문학문화콘텐츠/한국어교육 4.07/4.5</span>
-                </li>
-                <li class="text_07">2022.05 - 2022.11 청춘마이크 홍보 서포터즈</li>
-                <li class="text_07">2023.09 - 2024.03 그린컴퓨터학원신촌 수료
-                    <br><span class="text_07_small">수업명</span>
-                </li>
-            </ul>
-            <ul class="certificate">
-                <li class="text_07">2021.02 한국사능력검정시험 2급 </li>
-                <li class="text_07">2021.08 운전면허 2종보통 </li>
-                <li class="text_07">2022.03 컴퓨터활용능력 2급 </li>
-                <li class="text_07">2022.08 TOEIC 780 </li>
-                <li class="text_07">2023.12 GTQ 포토샵 1급 </li>
-            </ul>
+            <div class="second">
+                <div class="first_box">   
+                    <span class= "text_07_round">
+                        CERTIFICATE
+                    </span>
+                </div>
+
+                <ul class="certificate">
+                    <li class="text_07">2021.02 한국사능력검정시험 2급 </li>
+                    <li class="text_07">2021.08 운전면허 2종보통 </li>
+                    <li class="text_07">2022.03 컴퓨터활용능력 2급 </li>
+                    <li class="text_07">2022.08 TOEIC 780 </li>
+                    <li class="text_07">2023.12 GTQ 포토샵 1급 </li>
+                </ul>
+            </div>
         </div>
     </div>
-    <div class="about_right"></div>
+    <div class="about_right">
+        <div class="right_box"></div>
+    </div>
+    <div class="scroll_area_position">
+        <div class="search_box_position">
+            <span class="scroll_text">
+                ABOUT
+            </span>
+        </div>
+    </div>
+   
+
+</section>
+
+<div class="sticky">
     <div class="scroll_area">
         <div class="search_box">
             <div class="rect_search">
-                <span class="scroll_text"> ABOUT</span>
+                <!--<span class="scroll_text"> ABOUT</span>-->
                 <span class="material-symbols-outlined">
                     search 
                 </span>
             </div>
-
         </div>
         <div class="header_scroll">
             <ul class="scroll_box">
-                <li a class="scroll_text_02"> HOME </li>
-                <li a class="scroll_text_02"> ABOUT </li>
-                <li a class="scroll_text_02"> PORTFOLIO </li>
-                <li a class="scroll_text_02"> ETC </li>
-                <li a class="scroll_text_02"> CONTACT </li>
+                <li><a class="scroll_text_02" href="#home">HOME</a></li>
+                <li><a class="scroll_text_02" href="#about">ABOUT</a></li>
+                <li><a class="scroll_text_02" href="#portfolio">PORTFOLIO</a></li>
+                <li><a class="scroll_text_02" href="#etc">ETC</a></li>
+                <li><a  class="scroll_text_02" href="#contact">CONTACT</a></li>
             </ul>
         </div>
-        <div class="toggle"></div>
+        <div class="toggle">
+            <!--<div class="toggle_position">
+                <span class="material-symbols-outlined" id="toggle_icon">
+                    bedtime
+                </span>
+            </div>-->
+            <div class="toggle_main" id="button_background">
+                <div class="toggle_button" id="button_toggle"> </div>
+            </div>
+        </div>
     </div>
 </div>
     <!--portfolio-->
-<div class="screen_05">
+<section id="portfolio" class="screen_05">
     <div class="po_left">
-        <div class="rect_po"> </div>
-        <span class="text_po_01"> 프로젝트명 </span>
-        <span class="text_po_02">
-            제작인원/기여도
-            <br>
-            사용툴 및 주요 언어
-        </span>
-
+        <div class="po_container">
+            <div class="rect_po"> </div>
+            <span class="text_po_01">
+                [프로젝트명]
+                <br>
+                제작인원/기여도
+                <br>
+                사용툴 및 주요 언어
+            </span>
+        </div>
     </div>
     <div class="po_right">
         <span class="text_po_03">
@@ -217,107 +254,124 @@
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con
         </span>
     </div>
-    <div class="scroll_area"></div>
-</div>
+    <div class="scroll_area_position_portfolio">
+        <div class="search_box_position_portfolio">
+            <div class="scroll_text_portfolio"> PORTFOLIO</div>
+        </div>
+    </div>
+</section>
     <!--ETC-->
     
-<div class="screen_06">
+<section id="etc" class="screen_06">
     <div class="etc_left">
-        <div class="etc_left_container">
-            <!--카테고리-->
-            <ul class="category">
-                <li><button class="category_button category_selected">
-                    All
-                </button></li>
-                <li><button class="category_button">
-                    Front-End
-                </button></li>
-                <li><button class="category_button">
-                    Design
-                </button></li>
-            </ul>
-            <!--사진1-->
-            <ul class="etc_all">
-                <li class="etc_work">
-                    <a href="#" target="_blank">
-                        <img src="./image/etc_img.jpg" alt="작업이미지" class="etc_img">
-                        <div class="etc_text">
-                            <span class="etc_title"> 제목</span>
-                            <span class="etc_description"> 설명</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="etc_work">
-                    <a href="#" target="_blank">
-                        <img src="./image/etc_img.jpg" alt="작업이미지" class="etc_img">
-                        <div class="etc_text">
-                            <span class="etc_title"> 제목2</span>
-                            <span class="etc_description"> 설명2</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="etc_work">
-                    <a href="#" target="_blank">
-                        <img src="./image/etc_img.jpg" alt="작업이미지" class="etc_img">
-                        <div class="etc_text">
-                            <span class="etc_title"> 제목3</span>
-                            <span class="etc_description"> 설명3</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="etc_work">
-                    <a href="#" target="_blank">
-                        <img src="./image/etc_img.jpg" alt="작업이미지" class="etc_img">
-                        <div class="etc_text">
-                            <span class="etc_title"> 제목4</span>
-                            <span class="etc_description"> 설명4</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="etc_work">
-                    <a href="#" target="_blank">
-                        <img src="./image/etc_img.jpg" alt="작업이미지" class="etc_img">
-                        <div class="etc_text">
-                            <span class="etc_title"> 제목5</span>
-                            <span class="etc_description"> 설명5</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="etc_work">
-                    <a href="#" target="_blank">
-                        <img src="./image/etc_img.jpg" alt="작업이미지" class="etc_img">
-                        <div class="etc_text">
-                            <span class="etc_title"> 제목6</span>
-                            <span class="etc_description"> 설명6</span>
-                        </div>
-                    </a>
+            <div class="etc_left_container">
+                <!--카테고리-->
+                <ul class="category">
+                    <li><button class="category_button category_selected" data-category="all">
+                        All
+                    </button></li>
+                    <li><button class="category_button" data-category="front-end">
+                        Front-End
+                    </button></li>
+                    <li><button class="category_button" data-category="design">
+                        Design
+                    </button></li>
+                </ul>
+                <!--사진1-->
+                <ul class="etc_all">
+                    <li class="etc_work" data-type="front-end">
+                        <a href="#" target="_blank">
+                            <img src="./image/project_01.png" alt="작업이미지" class="etc_img">
+                            <div class="etc_text">
+                                <span class="etc_title"> 제목</span>
+                                <span class="etc_description"> 설명</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="etc_work" data-type="front-end">
+                        <a href="#" target="_blank">
+                            <img src="./image/project_02.png" alt="작업이미지" class="etc_img">
+                            <div class="etc_text">
+                                <span class="etc_title"> 제목2</span>
+                                <span class="etc_description"> 설명2</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="etc_work" data-type="front-end">
+                        <a href="#" target="_blank">
+                            <img src="./image/project_03.png" alt="작업이미지" class="etc_img">
+                            <div class="etc_text">
+                                <span class="etc_title"> 제목3</span>
+                                <span class="etc_description"> 설명3</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="etc_work" data-type="design">
+                        <a href="#" target="_blank">
+                            <img src="./image/project_04.png" alt="작업이미지" class="etc_img">
+                            <div class="etc_text">
+                                <span class="etc_title"> 제목4</span>
+                                <span class="etc_description"> 설명4</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="etc_work" data-type="design">
+                        <a href="#" target="_blank">
+                            <img src="./image/project_05.png" alt="작업이미지" class="etc_img">
+                            <div class="etc_text">
+                                <span class="etc_title"> 제목5</span>
+                                <span class="etc_description"> 설명5</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="etc_work" data-type="design">
+                        <a href="#" target="_blank">
+                            <img src="./image/project_06.png" alt="작업이미지" class="etc_img">
+                            <div class="etc_text">
+                                <span class="etc_title"> 제목6</span>
+                                <span class="etc_description"> 설명6</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+
+    <div class="scroll_area_position_etc">
+        <div class="search_box_position_etc">
+            <div class="scroll_text_etc"> ETC </div>
+        </div>
+    </div>
+
+</section>
+
+    <!--contact-->
+<section id="contact" class="screen_07">
+    <div class="contact_left">
+        <div class="contact_left_container">
+            <ul>
+                <li class="contact_box">
+                    <span class="text_08"> 정다은 </span><br>
+                    <span class="text_08_small"> 
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                    </span><br>
+                    <span class="text_08_small">
+                        danaray@naver.com <br>
+                    </span>
+                    <span class="text_08_small">
+                        010-2768-3661
+                    </span>
                 </li>
             </ul>
         </div>
     </div>
-    <div class="scroll_area"></div>
-</div>
-
-    <!--contact-->
-<div class="screen_07">
-    <div class="contact_left">
-        <ul>
-            <li class="contact_box">
-                <span class="text_08"> 정다은 </span><br>
-                <span class="text_08_small"> 
-                    Ut enim ad minim veniam, quis nostrud exercitation
-                </span><br>
-                <span class="text_08_small">
-                    danaray@naver.com <br>
-                </span>
-                <span class="text_08_small">
-                    010-2768-3661
-                </span>
-            </li>
-        </ul>
+    <div class="scroll_area_position_contact">
+        <div class="search_box_position_contact">
+            <div class="scroll_text_contact"> CONTACT </div>
+        </div>
     </div>
-    <div class="scroll_area"></div>
-</div>
+
+</section>
 
 </body> 
 </html>
