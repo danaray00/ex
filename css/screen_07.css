@@ -1,10 +1,10 @@
 .screen_07{
     width: 100%; /*1920px*/
     /*1080px* 또는 100vw*/  
-    height: 40vh;  
+    height: 100vh;  
     display: grid;
     grid-template-areas:
-    "contact_left scroll_area_02"
+    "contact_left scroll_area_position_contact"
     ; 
     grid-template-columns: 83% 17%;
     scroll-snap-align: end;
@@ -13,35 +13,51 @@
 
 .contact_left{
     display: flex;
-    flex-flow: column wrap;
-    width: 100%;
-    height: 40vh;
+    align-items: center;
     justify-content: center;
+    background-color: var(--color-origin);
+}
+.contact_left_container{
+    display: block;
 }
     .contact_box{
         display: flex;
         flex-flow: column wrap;
+        gap: 1rem;
     }
 
 .text_08{
-    font-size: 30px;
+    font-size: 3rem;
     color: var(--color-text);
-    margin: 10px;
-    margin-left: 30px;
     font-weight: bold;
-
+    text-align: center;
 }
 
 .text_08_small{
-    font-size: 20px;
+    font-size: 2rem;
     color: var(--color-text);
-    margin: 10px;
-    margin-left: 30px;
-
+    text-align: center;
 }
 
-.scroll_area_02{
-    grid-area: scroll_area_02;
-    background-color: #fff;
-    height: 50vh;
+.scroll_area_position_contact{
+    grid-area: scroll_area_position_contact;
+    background-color: var(--color-origin);
 }
+    .search_box_position_contact{
+        width: 28rem;
+        height: 6rem;
+        margin: 1rem;
+        margin-left: 4.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .scroll_text_contact{
+            font-size: 3rem;
+            margin-left: 1rem;
+            margin-right: 11rem;
+            text-align: center;
+            z-index: 904;
+            color: var(--color-text);
+        }
+
