@@ -68,15 +68,61 @@
     }
 
 
-    .scroll_text{
-        font-size: 3rem;
-        margin-left: 1rem;
-        margin-right: 14rem;
-        text-align: center;
-        z-index: 900;
-        color: var(--color-text);
-
+        .scroll_text{
+            font-size: 3rem;
+            margin-left: 1rem;
+            margin-right: 10rem;
+            text-align: center;
+            z-index: 900;
+            color: var(--color-text);
+            white-space: nowrap; 
+            overflow: hidden;
+            border-right: 2px solid var(--color-text);
+            display: inline-block;
+            animation: typing 2s steps(20, end), blink-caret 0.5s step-end infinite;
         }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+          }
+          
+          @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: var(--color-text); }
+          }
+        /*
+        .blink {
+            animation: blink 0.7s infinite;
+            font-size: 3rem;
+            margin-right: 10rem;
+            text-align: center;
+            z-index: 900;
+            color: var(--color-text);
+          }
+
+          @keyframes blink {
+            from{
+                opacity: 0;
+            }
+            to {
+              opacity: 80;
+            }
+          }*/
+
+        /*
+        .scroll_text::after{
+            content: '';
+            margin-left: 3rem;
+            border-right: 2px solid var(--color-text);
+            animation: cursor .9s infinite steps(2);
+        }
+
+        @keyframes cursor {
+            from { border-right: 2px solid var(--color-primary); }
+            to { border-right: 2px solid var(--color-text); }
+          }
+          */
 
 
 .text_07_round{
