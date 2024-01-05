@@ -1,5 +1,7 @@
 @media all and (max-width:768px) {
-
+body{
+    font-size: 5px;
+}
 
     /*screen1*/
 .screen{
