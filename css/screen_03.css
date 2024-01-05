@@ -23,6 +23,10 @@
     align-items: center; 
     justify-content: space-between;
 }
+    .toggle_header{
+        display: none;
+    }
+    
     .header_menu{
         display: flex;
         gap: 1rem;
@@ -108,7 +112,7 @@
                 text-align: left;
                 color: var(--color-text);
             }
-
+ 
             .text_05_bold{
                font-size: 5.5rem;
                 text-align: left;
