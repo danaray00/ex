@@ -1,18 +1,56 @@
 @media all and (max-width:768px) {
-body{
-    font-size: 5px;
+*{
+    font-size: 62.5%; /*10px 단위로 계산*/
 }
 
     /*screen1*/
-.screen{
-    width: 100%;
-    flex-flow: column;
-    align-items: start;
-}
-
     /*screen2*/
-
+ 
     /*screen3(home)*/
+
+    /*header*/
+
+    .header_container{
+        flex-flow: column;
+        align-items: start;
+        position: fixed;
+
+    }
+        .header{
+            width: 100%;
+        }
+            .header_menu{
+                display: none;
+            }
+            .header_menu.open{/*자바스크립트에서 사용예정*/
+                display: flex;
+                flex-flow: column nowrap;
+                width: 100%;
+                background: transparent;
+                text-align: center;
+                padding: 1rem 4rem;
+                gap: 1rem;
+            }
+            .header_menu_item{
+                font-size: 10px;
+            }
+
+            .toggle_header{
+                display: block;
+                position: absolute;
+                top: 1.4rem;
+                right:5rem;
+                border:0;
+            }
+            .hamburger{
+                display: block;
+                color: var(--color-text);
+                font-size: 1.5rem;
+                position: absolute;
+                top: 1.4rem;
+                right:1rem;
+                border:0;
+            }
 
     /*screen4(about)*/
 
@@ -21,4 +59,11 @@ body{
     /*screen6(etc)*/
 
     /*screen7(contact)*/
+
+    /*sticky*/
+
+    .sticky{
+        display: none;
+    }
 }
+
