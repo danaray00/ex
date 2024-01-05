@@ -65,6 +65,7 @@
         color: var(--color-text);
         margin-left: 3%;
         margin-right: 40%;
+        
     }
 
     .text_03{
@@ -79,7 +80,7 @@
         font-size: 3.3rem;
         text-align: center;
         font-weight:bold;
-        color: var(--color-accent);
+        color: var(--color-accent-text);
     }
 
     .text_04_02{
