@@ -29,6 +29,6 @@
 .text_01{
     font-size: 6.5rem;
     text-align: center;
-    font-weight:bold;
-    color: var(--color-accent);
+    font-weight: bold;
+    color: var(--color-accent-text);
 }
