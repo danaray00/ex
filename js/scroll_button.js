@@ -21,4 +21,3 @@ function ani_slide(){
         }
 }
     toggle_button.addEventListener("click", ani_slide);
-    toggle_button.addEventLister("click", ani_slide);
