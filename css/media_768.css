@@ -249,9 +249,10 @@
     
         .scroll_text{
             font-size: 4.3rem;
-            margin-left: 0rem;
-            margin-right: 0rem;
-            z-index: 900;
+            margin: 0 auto;
+            text-align: center;
+            position: absolute;
+            z-index: 999;
         }
         /*screen5(portfolio)*/
         .screen_05{
@@ -333,8 +334,7 @@
     
         .scroll_text_etc{
             font-size: 4.3rem;
-            margin-left: 0rem;
-            margin-right: 0rem;
+            margin: 0 auto;
         }
 
         .category{

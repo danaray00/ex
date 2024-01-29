@@ -70,7 +70,10 @@
             height: 55rem;/*526px;*/
             object-fit: cover;
             border-radius: 300px;
-            border: 2px solid var(--color-text);
+            border: 3px solid var(--color-text);
+            background-image: url(../image/person.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         .keyword{
             margin-top: 5rem;
