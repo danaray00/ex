@@ -55,8 +55,15 @@
         width: 70%;
         margin-left: 5%;
         margin-top: 5%;
-
     }
+    .box_01_04{
+        display: flex;
+        flex-flow: nowrap;
+        width: 70%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+
 
     .text_02{
         font-size: 6.5rem;

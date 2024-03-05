@@ -28,8 +28,7 @@
         .rect_po{
             cursor :pointer;
             width: 80rem;
-            height: 50rem;
-            background-color: #4a4a4a;
+            height: auto;
         }
 
             .text_po_01{ 

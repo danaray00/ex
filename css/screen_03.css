@@ -96,12 +96,12 @@
             }
             .main_right_03{ 
                 display: flex;
-                flex-flow: wrap;
+                flex-flow: no-wrap;
                 gap: 1rem;
             }
 
             .skill_box{
-                width: 8rem;
+                width: 50px;
                 border-radius: 10px;
                 overflow: hidden;
             }
