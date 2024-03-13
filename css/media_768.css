@@ -142,7 +142,7 @@
                 }
     
                 .skill_box{
-                    width: 50px;
+                    width: 30px;
                     border-radius: 10px;
                     overflow: hidden;
                 }
@@ -342,10 +342,12 @@
             justify-content: center;
             gap: 2rem;
             margin-bottom: 4rem;
+
         }
         .category_button{
             font-size: 4.3rem;
             padding: 2.5rem 4.5rem;
+            z-index: 999;
         }
     /*===========================img 6개======================*/
     .etc_left{
@@ -356,7 +358,10 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         gap: 15rem;
-        padding-left: 30rem;    
+        padding-left: 30rem;
+        z-index: 999;
+
+
     }
     .etc_img{
         width: 70%;
